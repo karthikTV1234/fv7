@@ -1,0 +1,16 @@
+What is Stream?
+A Stream is like a pipe that gives you values one after another over time.
+💡 Think: water drops coming out of a tap — not all at once, but one by one.
+
+Types of Streams
+ 1. Single Subscription Stream
+ 2. Broadcast Stream
+
+
+Single Subscription Stream:
+ 1. Allows only one listener
+ 2. Default type of stream
+ 3. If you try to listen again → ❌ Error
+
+Broadcast Stream:
+ 1. Allows multiple listeners

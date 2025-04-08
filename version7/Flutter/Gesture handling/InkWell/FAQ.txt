@@ -1,0 +1,7 @@
+🎯 When to Use This?
+✔️ When you need a tapable field to select a date.
+✔️ When the date needs to be stored in Bloc state.
+✔️ When the UI must update after date selection.
+
+We need to store just seconds of time that which date is user is selected right
+Do you think we need to store in Bloc state?

@@ -1,0 +1,16 @@
+Limitations:
+❌ Limitations of InkWell
+1. Needs a Material Ancestor
+Problem: InkWell only works inside a Material widget (like Card, Scaffold, or manually wrapping with Material).
+If you forget this, the ripple effect won’t appear.
+
+2. Limited Gesture Support
+Only supports tap, double tap, long press, and hover.
+
+❌ No support for gestures like:
+
+Swipe
+
+Pan/Drag
+
+Pinch/Zoom

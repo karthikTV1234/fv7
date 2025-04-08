@@ -1,0 +1,46 @@
+🔹 What is a Map in Dart?
+A Map is a collection of key-value pairs.
+Think of it like a dictionary:
+ 1. You search using a key
+ 2. And get back the value
+
+
+Syntax:
+Map<KeyType, ValueType> mapName = {
+  key1: value1,
+  key2: value2,
+};
+
+
+Example:
+void main() {
+  Map<String, String> capitals = {
+    'India': 'New Delhi',
+    'USA': 'Washington D.C.',
+    'Japan': 'Tokyo',
+  };
+
+  print(capitals['India']); // Output: New Delhi
+  print(capitals['Germany']); // Output: null
+
+
+ //Using forEach()
+capitals.forEach((key, value) {
+  print('$key → $value');
+});
+  
+//Using entries property and forEach() method
+capitals.entries.forEach((e) {
+  print('{${e.key}, ${e.value} }');
+});
+
+ //Using for-in with .entries
+for (var entry in capitals.entries) {
+  print('${entry.key} → ${entry.value}');
+}
+  
+//check if a map contains a certain key
+print(capitals.containsKey('India')); //true
+print(capitals.containsKey('Germany')); //false
+
+}

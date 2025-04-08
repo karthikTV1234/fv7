@@ -1,0 +1,5 @@
+For a list of items in a screen, Which one i need to use, Stateless or Stateful?
+Most recommened approach
+
+
+Use Case 1: Fetching list from API (e.g., Dio) on screen load

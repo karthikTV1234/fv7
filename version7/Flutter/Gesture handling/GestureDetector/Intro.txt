@@ -1,0 +1,29 @@
+What is GestureDetector?
+GestureDetector is a widget that detects gestures like tap, double tap, long press,etc. It doesn't show any visual effect when tapped.
+
+
+➤ Common Use Cases:
+Detecting double-taps, swipes, etc.
+
+GestureDetector(
+  onTap: () {
+    // Handle tap gesture
+  },
+  onDoubleTap: () {
+    // Handle double tap gesture
+  },
+  onLongPress: () {
+    // Handle long press gesture
+  },
+  child: Container(
+    // Your interactive widget here
+  ),
+)
+
+
+
+❌ Limitations of GestureDetector
+1. No Visual Feedback
+Problem: It doesn’t show any ripple or highlight when tapped.
+Impact: Users don’t get a visual indication that they touched something.
+Solution: Use InkWell or InkResponse if you need touch feedback.

@@ -1,0 +1,16 @@
+Precautions When Using AutomaticKeepAliveClientMixin:
+Memory Management:
+ 1. Keeping widgets alive consumes memory. Use the mixin judiciously to avoid memory leaks or excessive resource consumption.
+
+Performance Trade-offs:
+ 1. Retaining too many widgets can lead to performance issues, especially in low-memory devices. Test your app thoroughly to ensure optimal performance.
+
+
+Misuse of wantKeepAlive:
+ 1. Ensure wantKeepAlive returns true only when necessary. Otherwise, widgets might stay alive unnecessarily, consuming resources.
+
+Widget Lifecycle Awareness:
+Widgets using the mixin won’t undergo typical lifecycle methods like dispose as often. Be cautious with streams, controllers, or listeners that need explicit cleanup.
+
+Testing Considerations:
+Test for edge cases where widgets may be unnecessarily retained due to improper use of the mixin. Memory profiling tools can help identify such issues.

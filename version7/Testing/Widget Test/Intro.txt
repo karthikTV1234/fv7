@@ -1,0 +1,7 @@
+🚀 What is Widget Testing?
+Widget testing checks a single widget (or a small group of widgets) to make sure it looks and behaves correctly.
+
+
+What can we test in a widget?
+State Changes:
+ 1. Check how the UI updates after a state change (like incrementing a counter).

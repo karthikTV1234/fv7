@@ -1,0 +1,10 @@
+1. Swipe to Delete in a List
+You want to detect horizontal swipe gestures to delete or archive items in a list.
+🟢 Why GestureDetector?
+  InkWell doesn't support horizontal swipe detection.
+
+2. Double Tap to Like (like Instagram)
+Detecting a double-tap on an image to show a heart animation.
+
+3. Long Press to Show Options
+Long press on a message to show options like delete, copy, forward (like in chat apps).

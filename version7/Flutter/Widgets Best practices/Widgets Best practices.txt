@@ -1,0 +1,7 @@
+🔧 1. Widget Rebuild Optimization
+✅ A. Use const Widgets
+Why?
+When a widget is marked const, Flutter doesn’t rebuild it unnecessarily — it reuses the instance, saving CPU and memory.
+
+When to use?
+Use const for widgets that don’t change over time.

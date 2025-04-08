@@ -1,0 +1,33 @@
+🎯 Your goal:
+You want to know if a new screen(new instance) is created every time you switch tabs.
+
+
+class BottomNavigation extends StatelessWidget {
+  final List<Widget> screens = [
+    HomeScreen(),
+    EntriesScreen(),
+    AnalysisScreen(),
+  ];
+
+Then you use:
+body: screens[currentIndex],
+
+❓ So what happens when you switch tabs?
+➡️ Flutter does not create new widgets.
+ 1. Because screens is created once at the top.
+ 2. It reuses the same widgets every time.
+
+Observations:
+ 1. Everytime on moving to another tab and come back, same instance.
+
+
+New widget/Instance every time?
+Just move the list(below one) inside the build() method.
+final List<Widget> screens = [
+    HomeScreen(),
+    EntriesScreen(),
+    AnalysisScreen(),
+  ];
+
+Observations:
+ 1. Everytime on moving to another tab and come back, new instance.

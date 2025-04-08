@@ -1,0 +1,25 @@
+🕒 FUTURE – One-time delivery 📦
+Analogy: Food Delivery from a Restaurant
+Imagine you're ordering food from a restaurant:
+ 1. You place an order.
+ 2. The restaurant says: “Okay, we’ll deliver it soon.”
+ 3. After some time, a delivery guy comes and gives you one meal.
+ 4. Done! ✅
+
+In Dart terms:
+ 1. You request something async (like data from the internet).
+ 2. Dart returns a Future (a promise that the data will come).
+ 3. When it's done, the data is delivered once, and the future is completed.
+
+
+
+🌊 STREAM – Continuous delivery 📬📬📬
+Analogy: Subscription to a Magazine
+Now imagine you subscribe to a magazine:
+ 1. Every week, the postman brings a new magazine.
+ 2. You can read each one as it comes, or stop the subscription anytime.
+ 3. It's a flow of multiple deliveries over time.
+
+In Dart terms:
+ 1. A Stream sends multiple values over time.
+ 2. You can listen to it and react to each new value.

@@ -1,0 +1,29 @@
+🧠 What is StreamBuilder?
+StreamBuilder is a Flutter widget that:
+ 1. Listens to a Stream
+ 2. Rebuilds the UI automatically whenever new data arrives in that stream.
+
+
+There are two ways to listen to the controller:
+1. Uisng listener
+2. StreamBuilder
+
+
+Syntax:
+StreamBuilder<T>(
+  stream: yourStream,
+  builder: (BuildContext context, AsyncSnapshot<T> snapshot) {
+    if (snapshot.hasData) {
+      return YourWidgetUsing(snapshot.data);
+    } else if (snapshot.hasError) {
+      return Text('Error: ${snapshot.error}');
+    } else {
+      return CircularProgressIndicator(); // loading state
+    }
+  },
+)
+
+Memory Leaks:
+When the widget is removed from the widget tree (like when navigating away), StreamBuilder automatically:
+ 1. Cancels the subscription ✅
+ 2. Cleans up the listener ✅

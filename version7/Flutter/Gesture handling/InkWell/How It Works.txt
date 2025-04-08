@@ -1,0 +1,12 @@
+🧐 How It Works
+1. Listens to Bloc State
+   Uses BlocBuilder<DataEntryBloc, DataEntryState> to get the selected date from the state.
+
+2. Opens Date Picker Dialog
+   showDatePicker() is triggered when the user taps the widget.
+
+3. Updates the Bloc State
+   When a date is selected, we dispatch a DateChanged event to update the state.
+
+4. Displays the Selected Date
+   The selected date is formatted using DateFormat('yyyy-MM-dd') and displayed.
