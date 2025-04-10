@@ -1,0 +1,1 @@
+1. This tree is responsible for the actual layout and painting on the screen.

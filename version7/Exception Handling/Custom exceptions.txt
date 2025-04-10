@@ -1,0 +1,8 @@
+🔸 Why create custom exceptions?
+  1. To represent specific error conditions in your app.
+  2. Makes the code more readable and maintainable.
+  3. Helps in separating different error types.
+
+
+How to define a custom exception?
+Java:

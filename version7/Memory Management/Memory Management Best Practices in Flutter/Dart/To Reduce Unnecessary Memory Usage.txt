@@ -1,0 +1,47 @@
+Even if there's no leak, you might use too much memory
+Even without memory leaks, your app can use more memory than needed, which slows things down, especially on low-end devices.
+
+Examples:
+ 1. Rebuilding Large Widgets in build()
+    1. If you create big objects inside build(), they’re rebuilt every time, using CPU and memory.
+Example:
+🔴 Bad:
+Widget build(BuildContext context) {
+  final controller = TextEditingController(); // Re-created every frame
+  return TextField(controller: controller);
+}
+
+✅ Good:
+late final TextEditingController _controller;
+
+@override
+void initState() {
+  _controller = TextEditingController();
+  super.initState();
+}
+
+ 2. Loading full image lists into memory
+    1. If you have many images (e.g., 1000), and you try to load them all at once, it can use too much memory.
+    2. This slows down the app and might even crash on low-end devices.
+Example:
+❌ Bad Practice: Loading All Images at Once
+ListView(
+  children: imageUrls.map((url) => Image.network(url)).toList(),
+)
+✅ Best Practice: Lazy Loading with ListView.builder
+ListView.builder(
+  itemCount: imageUrls.length,
+  itemBuilder: (context, index) {
+    return Image.network(imageUrls[index]);
+  },
+)
+ 1. Only loads images that are visible on screen
+ 2. Saves memory and improves performance
+ 3. Called lazy loading
+
+3. Using const where possible
+    1. Using const lets Flutter reuse widgets instead of rebuilding them — saving memory and improving performance.
+    2. Use const whenever the widget and its parameters don’t change.
+ 4. Using ListView.builder for Large Lists
+    1. ListView builds all items at once — bad for big lists.
+    2. ListView.builder only builds visible items (efficient memory use).

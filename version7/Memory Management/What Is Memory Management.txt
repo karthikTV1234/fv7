@@ -1,0 +1,4 @@
+Memory management means:
+ 1. Allocating memory when you need it
+ 2. Releasing it when you're done
+ 3. Avoiding memory leaks (unused objects still taking up memory)

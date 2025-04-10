@@ -1,3 +1,0 @@
-Scenario:
-If we move from different tabs, widget should not be rebuilt
-If we come from add entry screen, list should be refresh

@@ -1,0 +1,4 @@
+What is Widget Tree?
+ 1. This is the declarative UI code you write.
+ 2. It shows the structure of your UI.
+ 3. All widgets (like Text, Container, Column, etc.) are part of this tree.

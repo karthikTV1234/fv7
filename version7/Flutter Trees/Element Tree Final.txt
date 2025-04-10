@@ -1,0 +1,14 @@
+1. The element tree is an internal representation of the widget tree that Flutter uses for rendering.
+
+
+What is "Rendering"?
+Rendering means:
+  "Drawing the UI on the screen"
+
+In Flutter (or any UI framework), rendering is the process of:
+ 1. Taking your code (Widget Tree)
+ 2. Figuring out what should appear on screen
+ 3. And finally, painting that on the display — text, buttons, images, layout, etc.
+
+
+2. The element tree is created from the widget tree during the widget build process.

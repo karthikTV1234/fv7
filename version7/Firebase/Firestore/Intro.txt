@@ -1,1 +1,0 @@
-https://medium.com/@kavyamistry0612/firebase-firestore-in-flutter-a-guide-to-crud-operations-efde48fa89c6

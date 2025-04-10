@@ -1,0 +1,22 @@
+Java:
+try {
+    // code
+} catch (IOException e) {
+    // specific exception
+} catch (Exception e) {
+    // general exception
+}
+
+
+Dart:
+try {
+  // code
+} on FormatException catch (e) {
+  print('Format error: $e');
+} catch (e) {
+  print('General error: $e');
+}
+
+✔️ Dart uses on to catch specific exceptions. 
+✔️ You can use on for type and catch for details (on <Type> catch (e)).
+

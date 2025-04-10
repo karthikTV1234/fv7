@@ -1,0 +1,20 @@
+What is runZonedGuarded?
+Flutter doesn’t catch errors from Futures or async code automatically — that's where runZonedGuarded helps.
+
+Syntax:
+runZonedGuarded(
+  () {
+    // Run your Flutter app
+    runApp(MyApp());
+  },
+  (error, stackTrace) {
+    // Handle uncaught errors here
+    print('Caught async error: $error');
+  },
+);
+
+
+🧠 Why Do We Need This?
+By default:
+ 1. Flutter catches sync widget errors (e.g., build() errors) using FlutterError.onError.
+ 2. But async errors (e.g., inside Future, async/await, timers) might crash the app if not caught manually.

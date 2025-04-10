@@ -1,0 +1,16 @@
+void main() {
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details); // Show red screen in debug
+    print("Caught Flutter framework error: ${details.exception}");
+  };
+
+  runZonedGuarded(
+    () {
+      runApp(MyApp());
+    },
+    (error, stackTrace) {
+      print("Caught async error: $error");
+      // Send to Crashlytics/Sentry/log file if needed
+    },
+  );
+}

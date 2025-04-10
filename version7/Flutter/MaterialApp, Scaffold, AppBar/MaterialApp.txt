@@ -1,2 +1,0 @@
-What is MaterialApp?
-1. MaterialApp is the top-level widget of a Flutter app that uses Material Design. It sets up themes, navigation, and other configurations.

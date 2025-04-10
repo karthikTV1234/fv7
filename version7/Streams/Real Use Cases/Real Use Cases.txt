@@ -1,4 +1,0 @@
-1. Connectivity Check
-  1. Detect network status changes
-3. Search Bar
-  1. Live search with debounce

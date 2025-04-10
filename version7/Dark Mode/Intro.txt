@@ -1,0 +1,12 @@
+What is Dark Mode / Light Mode in Flutter?
+In Flutter, themes allow you to change how your app looks — like background color, text color, icon color, etc.
+You can create two themes:
+ 1. Light Theme (for daytime usage)
+ 2. Dark Theme (for night/dark environments)
+
+
+Why Dark Mode?
+Reduced Eye Strain: Dark backgrounds are easier on the eyes, especially in low-light environments.
+Battery Efficiency: 
+ 1. Dark mode can extend battery life by reducing screen energy consumption
+Improved Aesthetics: Many users prefer dark themes for a cleaner, modern look.

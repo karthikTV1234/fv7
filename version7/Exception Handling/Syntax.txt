@@ -1,0 +1,22 @@
+Java:
+try {
+    // risky code
+} catch (Exception e) {
+    System.out.println("Error: " + e.getMessage());
+} finally {
+    System.out.println("Cleanup");
+}
+
+Dart:
+try {
+  // risky code
+} catch (e) {
+  print('Error: $e');
+} finally {
+  print('Cleanup');
+}
+
+✔️ Similarities: Both use try, catch, and finally.
+✔️ Differences:
+   1. Dart doesn't need to declare the type of exception in catch.
+   2. In Dart, you can catch with or without a type.

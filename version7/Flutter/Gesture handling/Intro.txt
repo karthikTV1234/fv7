@@ -1,2 +1,0 @@
-1. Gesture handling is used when you want to detect taps, swipes, double taps, long presses, etc.
-2. Two of the most common widgets used for gesture detection are GestureDetector and InkWell

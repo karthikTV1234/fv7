@@ -1,0 +1,8 @@
+💡 Tip: Always wrap async functions in try-catch when using await.
+
+
+UI errors → FlutterError.onError
+
+Async errors → runZonedGuarded()
+
+Red error screen → customized via ErrorWidget.builder

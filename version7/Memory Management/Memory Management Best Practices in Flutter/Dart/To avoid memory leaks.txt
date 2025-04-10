@@ -1,0 +1,24 @@
+Dispose of Resources
+ 1. When using widgets like StatefulWidget, it's essential to override the dispose method and release any resources you've acquired, such as streams or controllers. 
+ 2. Failing to do so can lead to memory leaks.
+
+
+What Resources i Need to dispose in Dart & flutter?
+ 1. TextEditingController
+Example:
+ @override
+  void dispose() {
+    _myController.dispose();
+    super.dispose();
+  }
+
+ 2. FocusNode
+    1. Used to handle focus (keyboard interactions) in form fields.
+ 3. ScrollController
+    1. Used in scrollable widgets like ListView.
+ 4. AnimationController
+ 5. PageController
+ 6. StreamSubscription
+    1. If you're listening to a stream, cancel the subscription.
+ 7. StreamController
+    1. If you're using custom streams, close them.

@@ -1,0 +1,26 @@
+Widget Tree – The Planner (🐷 1st Pig):
+ 1. This is your code.
+ 2. Just a blueprint or description of what UI should look like.
+ 3. Stateless and immutable – doesn't know what’s already on screen.
+ 4. Created fresh every time the UI updates.
+
+
+🏗️ 2. Element Tree – The Organizer (🐷 2nd Pig)
+ 1. Connects the Widget Tree with the Render Tree.
+ 2. Knows what’s already built and manages updates.
+ 3. Creates, updates, and reuses widgets smartly.
+ 4. Holds a reference to both:
+    1. The Widget
+    2. The Render Object
+
+✅ First time: Builds everything
+✅ Next updates: Reuses and updates only changed parts
+
+
+🎨 3. Render Object Tree – The Builder (🐷 3rd Pig)
+  1. Actually paints and lays out the UI on the screen.
+  2. Gets instructions from the Element Tree.
+  3. Handles:
+     1. Size
+     2. Position
+     3. Drawing

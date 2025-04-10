@@ -1,0 +1,24 @@
+what it is, when it’s used, and how to customize it to show a nice fallback UI when something goes wrong in the widget tree.
+
+What is ErrorWidget in Flutter?
+In Flutter, if a widget throws an error during the build phase, Flutter shows a red screen with an error message like:
+Oops! Unexpected error occurred.
+
+
+Why Use ErrorWidget.builder?
+You can customize this default red screen using ErrorWidget.builder, so that:
+  1. The app doesn’t crash or look broken
+  2. You can show a friendly UI like “Something went wrong”
+  3. Optionally log the error
+
+
+Where to place ErrorWidget.builder?
+No, you do NOT need to write ErrorWidget.builder in every widget.
+You just define it once globally (usually in main()), and Flutter will use it whenever any widget throws an error during the build phase.
+
+
+🔍 Notes
+1. ErrorWidget.builder only handles errors in the widget build phase.
+2. It won’t catch:
+ 1. Async errors
+ 2. Logic errors outside widgets

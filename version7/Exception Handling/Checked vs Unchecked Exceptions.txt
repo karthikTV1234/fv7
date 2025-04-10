@@ -1,0 +1,10 @@
+Java
+ 1. Java has checked exceptions (like IOException) that must be caught or declared using throws.
+
+Example:
+void readFile() throws IOException {
+   // code
+}
+
+Dart
+ 1. Dart does not have checked exceptions. You don't need to declare throws, and the compiler won’t force you to catch exceptions.

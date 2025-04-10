@@ -1,0 +1,16 @@
+How Themes are defined in flutter?
+ 1. Themes are defined using the ThemeData class.
+
+Goal: Implement based on system preference
+
+Step 1: Define Light and Dark Themes
+Step 2: Apply Themes to Your Flutter App
+Step3: Switching Between Themes Dynamically
+
+
+Using System Theme Settings:
+MaterialApp(
+  theme: AppTheme.lightTheme,
+  darkTheme: AppTheme.darkTheme,
+  themeMode: ThemeMode.system, // Automatically switch based on system settings
+);

@@ -1,0 +1,29 @@
+Java:
+try {
+    // risky code
+} catch (IOException e) {
+    System.out.println("Logging the error");
+    throw e; // re-throwing
+}
+
+1. Java uses throw e; to rethrow an exception.
+2. You can throw the same or new exception.
+
+
+Dart:
+1. Dart has a special keyword: rethrow.
+2. We can use both throw and rethrow in Dart.
+
+throw in Dart:
+ 1. Used throw any exception (custom or built-in).
+ 2. You can throw a new exception.
+ 3. Or even re-throw a caught one (but stack trace might be lost).
+
+When you catch an exception and then use **throw e;** again, Dart creates a new error from this point, and the original trail (stack trace) is replaced.
+So you lose the info about where the error really started — and debugging becomes harder.
+
+
+rethrow in Dart:
+ 1. Used only inside a catch block.
+ 2. Re-throws the original exception.
+ 3. Preserves the original stack trace, which is useful for debugging.

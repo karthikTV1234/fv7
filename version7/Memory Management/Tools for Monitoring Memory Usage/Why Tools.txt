@@ -1,0 +1,25 @@
+Why Do Tools for Monitoring Memory comes into pitcure?
+Why we need Tools, What problems Tools will solve?
+
+1. Detect Memory Leaks
+   1. 🔍 Identify objects that stay in memory even after they’re no longer needed
+   2. 🧹 Helps detect parts of the app that are not cleaned up properly, like forgotten controllers or subscriptions
+ 
+2. Monitor Memory Usage Over Time
+   1. 📈 Track how memory usage increases as the app runs
+   2. 🐢 Helps catch gradual memory growth (called “memory creep”) which can slow down the app over time
+
+3. Analyze Garbage Collection (GC)
+   1. ♻️ Observe when Garbage Collection occurs and whether unused memory is being released
+   2. 🔁 Frequent GC may indicate inefficient memory use
+
+4. Compare Memory Snapshots
+   1. 📸 Take snapshots of memory at different times
+   2. 🔍 Compare snapshots to find which objects grew in number or size, helping detect leaks or incorrect usage
+
+
+📦 Without Tools:
+You're guessing what’s wrong.
+
+⚙️ With Tools:
+You’re using real data and visual insights to identify, debug, and optimize memory usage smartly.

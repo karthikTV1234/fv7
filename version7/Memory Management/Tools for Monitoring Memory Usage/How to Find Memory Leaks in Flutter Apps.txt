@@ -1,0 +1,15 @@
+How to find Memory leaks using Flutter DevTools:
+
+Way1: Tool Used: Flutter DevTools – Memory Tab
+
+Step 1: Run your Flutter app in Debug Mode
+Step 2: Open Flutter DevTools
+     1. Go to the "Memory" tab
+Step 3: Understand the Memory Tab Layout
+Step 4: Detect Memory Leaks
+Step 5: Take and Compare Snapshots
+Step 6: Fix the Leaks
+
+
+Way2: Leak Tracker
+Tool: leak_tracker (Official Dart/Flutter package)

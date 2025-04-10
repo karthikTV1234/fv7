@@ -1,1 +1,0 @@
-AppBar is the top toolbar of the app screen.

@@ -1,0 +1,27 @@
+Example:
+void main() {
+  // Catch and log framework errors
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details); // keep the red screen in debug
+    print("Caught Flutter framework error: ${details.exception}");
+  };
+
+  // Replace red error screen with a friendly message
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    return Center(
+      child: Text(
+        "Something went wrong",
+        style: TextStyle(color: Colors.red, fontSize: 18),
+      ),
+    );
+  };
+
+  runApp(MyApp());
+}
+
+
+🧪 What Happens Internally
+ 1. A widget throws an exception during build.
+ 2. Flutter catches it via FlutterError.onError.
+ 3. Flutter then builds a red screen using ErrorWidget.
+ 4. If you override ErrorWidget.builder, you replace that red screen with your own UI.

@@ -1,1 +1,0 @@
-https://medium.com/@kavyamistry0612/understanding-json-serialization-in-flutter-a-comprehensive-guide-363e99d017bd

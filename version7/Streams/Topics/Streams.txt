@@ -1,8 +1,0 @@
-💡 Analogy:
-Imagine a water pipe (stream) that sends drops of water (data) one by one.
-You (listener) stand near the pipe and collect drops as they come.
-
-
-How to Create a Stream (Without StreamController)
-1.Method 1: Stream.periodic()
-2. Method 2: async* generator (custom stream)

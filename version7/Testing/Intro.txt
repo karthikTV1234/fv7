@@ -1,4 +1,0 @@
-When to write test cases?
-You write tests when you want to make sure your code works correctly and won’t break in the future.
-
-Common cases where you should write tests

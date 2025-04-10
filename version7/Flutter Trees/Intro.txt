@@ -1,0 +1,20 @@
+In Flutter, rendering an app on the screen involves three different trees.
+
+1. Widget Tree
+2. Element Tree
+3. Render Object Tree
+
+
+Widget Tree         - What you want (blueprint)
+       ↓
+Element Tree        - Tracks what's built (manager)
+       ↓
+Render Object Tree  - Actually draws UI (builders)
+
+
+Widget Tree         (Your Code)
+    ↓
+Element Tree        (Runtime Structure)
+    ↓
+Render Object Tree  (Drawing on Screen)
+

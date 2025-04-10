@@ -1,0 +1,12 @@
+What is Element Tree?
+ 1. The Element Tree connects the Widget Tree to the Render Object Tree.
+ 2. It is created when the app runs.
+
+
+🧠 Think of it as:
+ “How it’s drawn on the screen.”
+
+
+So Element Tree helps Flutter:
+ 1. Avoid rebuilding everything
+ 2. Reuse as much as possible
